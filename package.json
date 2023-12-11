@@ -3,7 +3,7 @@
   "version": "1.0.0-beta.2",
   "description": "MQTT Datasource Plugin",
   "scripts": {
-    "build": "rm -rf dist && grafana-toolkit plugin:build && mage build:backend",
+    "build": "rimraf dist && grafana-toolkit plugin:build && mage build:backend",
     "spellcheck": "cspell -c cspell.config.json \"**/*.{ts,tsx,js,go,md,mdx,yml,yaml,json,scss,css}\"",
     "test": "grafana-toolkit plugin:test && mage test",
     "dev": "grafana-toolkit plugin:dev",
@@ -14,16 +14,16 @@
   "author": "Grafana Labs",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@grafana/data": "9.1.0",
-    "@grafana/runtime": "9.1.0",
-    "@grafana/toolkit": "9.1.0",
-    "@grafana/ui": "9.1.0",
+    "@grafana/data": "9.5.1",
+    "@grafana/runtime": "9.5.1",
+    "@grafana/toolkit": "9.5.1",
+    "@grafana/ui": "9.5.1",
     "@types/lodash": "latest",
-    "aedes": "^0.45.0",
-    "cspell": "6.13.3"
+    "aedes": "^0.49.0",
+    "cspell": "6.31.1"
   },
   "resolutions": {
-    "rxjs": "7.5.6"
+    "rxjs": "7.8.0"
   },
   "engines": {
     "node": ">=16"
